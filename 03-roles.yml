@@ -7,11 +7,3 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL == {{URL}}
-
-- name : print URL
-  hosts : all
-  connection : local
-  tasks :
-    - name : Print URL
-      ansible.builtin.debug:
-        msg: URL == {{URL}}
