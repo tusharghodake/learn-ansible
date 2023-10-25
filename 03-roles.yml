@@ -3,3 +3,7 @@
   connection : local
   roles :
     - demo
+
+- name : Print URL
+  ansible.builtin.debug:
+    msg: URL == {{URL}}
