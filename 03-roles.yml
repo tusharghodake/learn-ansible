@@ -4,6 +4,6 @@
   roles :
     - demo
 
-- name : Print URL
+- name : print URL
   ansible.builtin.debug:
     msg: URL == {{URL}}
