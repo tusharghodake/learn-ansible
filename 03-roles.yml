@@ -5,6 +5,7 @@
     - demo
 
 - name : print URL
+  hosts : all
   tasks :
     - name : Print URL
       ansible.builtin.debug:
