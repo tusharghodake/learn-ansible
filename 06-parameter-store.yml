@@ -3,4 +3,4 @@
   connection: local
   tasks:
     debug:
-      msg: Hi
+      msg: Hi hi
