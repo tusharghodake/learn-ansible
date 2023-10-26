@@ -1,6 +1,5 @@
-- name: Read a value from parameter store
-  hosts: all
+- name: read a value from parameter
+  hosts: localhost
   connection: local
-  tasks:
-    debug:
-      msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
+  debug:
+    msg: Hi
