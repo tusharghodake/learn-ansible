@@ -1,5 +1,6 @@
 - name: read a value from parameter
   hosts: localhost
   connection: local
-  debug:
-    msg: Hi
+  tasks:
+    debug:
+      msg: Hi
