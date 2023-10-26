@@ -3,4 +3,4 @@
   connection: local
   tasks:
     debug:
-      msg: Hi hi
+      msg: "{{ lookup('aws_ssm', 'test', region='us-east-1' ) }}"
