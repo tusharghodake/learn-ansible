@@ -1,11 +1,6 @@
 - name: read a value from parameter
   hosts: all
   connection: local
-  pre_tasks:
-    - name: install boto3
-      pip:
-        name: boto3
-        state: present
   tasks:
     - debug:
         msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1') }}"
