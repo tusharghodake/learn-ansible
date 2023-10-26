@@ -1,5 +1,5 @@
 - name: read a value from parameter
-  hosts: localhost
+  hosts: all
   connection: local
   pre_tasks:
     - name: install boto3
