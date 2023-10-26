@@ -2,6 +2,7 @@
   hosts: all
   vars:
     a: 100
+    fruit_name: apple
   tasks:
     - name: string conditions
       debug:
