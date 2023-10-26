@@ -1,5 +1,5 @@
 
 - name: Read a value from parameter store
-  hosts: localhost
+  hosts: all
   connection: local
   debug: msg="{{ lookup('amazon.aws.aws_ssm', 'Hello', region='us-east-2' ) }}"
