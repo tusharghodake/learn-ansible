@@ -1,6 +1,4 @@
 - name: Read a value from parameter store
-  hosts: localhost
-  connection: local
-  tasks:
+  hosts: all
   ansible.builtin.debug:
-    msg: "{{lookup('aws_ssm', 'test', region='us-east-1' )}}"
+  msg:  "{{lookup('aws_ssm', 'test', region='us-east-1' )}}"
