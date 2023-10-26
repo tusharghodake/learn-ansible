@@ -2,7 +2,7 @@
   hosts: all
   vars:
     a: 100
-    fruit_name: apple
+    fruit_name: applee
     b: true
   tasks:
     - name: string conditions
