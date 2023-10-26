@@ -3,6 +3,7 @@
   vars:
     a: 100
     fruit_name: apple
+    b: true
   tasks:
     - name: string conditions
       debug:
@@ -12,3 +13,7 @@
       debug:
         msg: a is > 10
       when: a > 10
+    - name: boolean conditions
+      debug:
+        msg: b is true
+      when: b
