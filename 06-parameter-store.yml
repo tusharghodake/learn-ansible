@@ -3,4 +3,4 @@
   connection: local
   tasks:
     - debug:
-        msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
+        msg: "{{ lookup('aws_ssm', 'test', region='us-east-1' ) }}"
