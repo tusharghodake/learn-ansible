@@ -1,4 +1,3 @@
-
 - name: Read a value from parameter store
   hosts: all
   connection: local
